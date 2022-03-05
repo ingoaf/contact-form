@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <title>Forms Challenge</title>
   </head>
   <body>
@@ -22,8 +22,8 @@
           <h2>How can we help you?</h2>
           <ul>
             <li>
-              <label for="your-name">Your Name</label>
-              <input type="text" id="your-name" name="your-name" />
+              <label for="your-name" >Your Name</label>
+              <input type="text" id="your-name" name="your-name" required/>
             </li>
             <li>
               <label for="your-email">Your Email Address</label>
@@ -39,13 +39,14 @@
             </li>
             <li>
               <label for="your-message">Your Message</label>
-              <textarea id="your-message" name="your-message"></textarea>
+              <textarea rows="4" id="your-message" name="your-message"></textarea>
             </li>
             <li>
               <label for="find-method">How did you find us</label>
               <select name="find-method" id="find-method">
                 <option value="web-search">Web Search</option>
-                <option value="recommendation">Recommendation</option>
+                <option value="word-of-mouth">Word of Mouth</option>
+                <option value="othet">Other</option>
               </select>
             </li>
           </ul>
@@ -53,7 +54,7 @@
         <section>
           <h2>How should we reply?</h2>
           <ul>
-            <li>
+            <li class="form-inline">
               <input
                 type="radio"
                 id="call-me"
@@ -62,27 +63,29 @@
               />
               <label for="call-me">Call me</label>
             </li>
-            <li>
+            <li                 class="form-inline">
               <input
                 type="radio"
                 id="email"
                 name="reply-method"
                 value="email"
+
               />
               <label for="email">Send me an email</label>
             </li>
-            <li>
+            <li class="form-inline">
               <input
                 type="radio"
                 id="dont-reply"
                 name="reply-method"
                 value="dont-reply"
+                
               />
               <label for="dont-reply">Don't reply</label>
             </li>
           </ul>
-          <div>
-            <input
+          <div class="form-inline" id="checkbox">
+            <input required
               type="checkbox"
               id="terms"
               value="accept-terms"
@@ -91,9 +94,9 @@
             <label for="terms">Accept terms</label>
           </div>
         </section>
-        <section>
-          <button>Clear</button>
-          <button>Submit</button>
+        <section id="buttons">
+          <button type="reset" id="clear">Clear</button>
+          <button type="submit" id="submit">Submit</button>
         </section>
       </form>
     </main>

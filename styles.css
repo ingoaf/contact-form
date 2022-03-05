@@ -1,15 +1,103 @@
 body {
-    background-color: rgb(247, 255, 254);
-    font-family: "Roboto", sans-serif;
+  background-color: rgb(247, 255, 254);
+  font-family: "Roboto", sans-serif;
+  color: rgb(61, 58, 58);
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 form {
-    width: 30rem;
-    margin: auto;
-    padding: 1rem;
-    background-color: rgb(247, 248, 255);
+  width: 30rem;
+  margin: auto;
+  padding: 1rem;
+  background-color: rgb(247, 248, 255);
+  border-radius: 6px;
+  box-shadow: 0 0.1rem 0.4rem rgba(99, 98, 98, 0.3);
+}
+
+form section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  font: inherit;
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 3px;
+  color: inherit;
+  padding: 0.25rem;
+}
+
+input:focus,
+textarea:focus{
+  border: 1px solid rgb(6, 1, 48);
+  background-color: rgb(169, 169, 253);
+}
+
+textarea {
+  resize: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-inline {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.form-inline input {
+  width: auto;
+  margin: 0.2rem;
+  margin-right: 0.5rem;
+  vertical-align: center;
+}
+
+#checkbox {
+  margin-top: 1rem;
+}
+
+#buttons {
+  display: flex;
+  justify-content: right;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  margin-left: 0.3rem;
+  border-radius: 3px;
+  border: 1px solid rgb(61, 58, 58);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#clear {
+  background-color: rgb(247, 248, 255);
+  color: rgb(61, 58, 58);
+}
+
+#clear:hover {
+  background-color: rgb(212, 212, 216);
+}
+
+#submit {
+  background-color: rgb(2, 2, 93);
+  color: rgb(247, 248, 255);
+}
+
+#submit:hover {
+    background-color: rgb(27, 27, 216);
 }
