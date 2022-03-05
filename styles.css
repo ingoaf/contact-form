@@ -38,7 +38,7 @@ select {
 }
 
 input:focus,
-textarea:focus{
+textarea:focus {
   border: 1px solid rgb(6, 1, 48);
   background-color: rgb(169, 169, 253);
 }
@@ -81,7 +81,7 @@ button {
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #clear {
@@ -99,5 +99,5 @@ button:hover {
 }
 
 #submit:hover {
-    background-color: rgb(27, 27, 216);
+  background-color: rgb(27, 27, 216);
 }
