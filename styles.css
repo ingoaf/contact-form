@@ -38,6 +38,10 @@ select {
   padding: 0.25rem;
 }
 
+select {
+  cursor: pointer;
+}
+
 input:focus,
 textarea:focus {
   border: 1px solid rgb(6, 1, 48);
